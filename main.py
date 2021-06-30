@@ -303,7 +303,7 @@ elif user_choice == 2:
 		while True:
 			cpu_set = cpu.set_value(cpuboard, cpu_row, cpu_col, cpu.CPU)
 			if cpu_set:
-				print(f"CPU has chosen row: {cpu_row} and column: {cpu_col}")
+				print(f"CPU has chosen row: {cpu_row + 1} and column: {cpu_col + 1}")
 				break
 			else:
 				cpu_indexes = cpu.generate_index()
